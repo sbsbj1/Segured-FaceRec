@@ -2,6 +2,25 @@ import cv2
 import os
 import numpy as np
 import time
+import json
+
+ruta_json = "interfaz/paradas.json"
+
+def registrar_evasion_json(id_parada):
+    # Leer el archivo JSON
+    with open(ruta_json, "r") as archivo:
+        paradas = json.load(archivo)
+
+    # Buscar la parada y sumar 1 al campo 'evasiones'
+    for parada in paradas:
+        if parada["id_parada"] == id_parada:
+            parada["evasiones"] += 1
+            print(f"Evasión registrada en: {id_parada}, Total Evasiones: {parada['evasiones']}")
+            break
+
+    # Guardar los cambios en el archivo JSON
+    with open(ruta_json, "w") as archivo:
+        json.dump(paradas, archivo, indent=4)
 
 # Crear carpetas si no existen
 if not os.path.exists('base_de_datos'):
@@ -49,7 +68,6 @@ def compare_faces(orb, img1, img2):
     good_matches = [m for m in matches if m.distance < 50]
 
     return len(good_matches) > 15  # Umbral de coincidencias
-
 
 # Función para capturar y registrar rostros en la cámara de pago
 def capture_paying_faces(cap):
@@ -129,7 +147,6 @@ def capture_paying_faces(cap):
         elif key == 27:  # Tecla 'Esc' para salir
             return 'exit'
 
-
 # Función para verificar los rostros en la cámara general
 def check_fare_evaders(cap):
     global evasor_counter, last_evasor_capture_time
@@ -207,6 +224,9 @@ def check_fare_evaders(cap):
                     recent_evasor_descriptors.append(face_resized)
                     last_evasor_capture_time = time.time()
 
+                    # Registrar la evasión en el archivo JSON
+                    registrar_evasion_json("PB10")  # Aquí debes pasar el id_parada correspondiente
+
         cv2.imshow('Camara General', frame)
 
         # Cambiar al modo de captura de pagadores con 'q' o cerrar con 'Esc'
@@ -215,7 +235,6 @@ def check_fare_evaders(cap):
             return 'payment'
         elif key == 27:  # Tecla 'Esc' para salir
             return 'exit'
-
 
 if __name__ == "__main__":
     cap = cv2.VideoCapture(0)  # Usamos solo una cámara
