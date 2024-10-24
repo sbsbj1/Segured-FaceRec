@@ -1,485 +1,485 @@
 [
     {
-        "id_parada":"PB1",
-        "nombre_parada":"PB1-Venezuela \/ Esq. Bolivia",
-        "lat_parada":-33.40455376,
-        "lon_parada":-70.62309515,
-        "evasiones":0
+        "id_parada": "PB1",
+        "nombre_parada": "PB1-Venezuela / Esq. Bolivia",
+        "lat_parada": -33.40455376,
+        "lon_parada": -70.62309515,
+        "evasiones": 0
     },
     {
-        "id_parada":"PB10",
-        "nombre_parada":"PB10-Avenida Dorsal \/ Esq. José Miguel Carrera",
-        "lat_parada":-33.3957367,
-        "lon_parada":-70.64951515,
-        "evasiones":0
+        "id_parada": "PB10",
+        "nombre_parada": "PB10-Avenida Dorsal / Esq. Jos\u00c3\u00a9 Miguel Carrera",
+        "lat_parada": -33.3957367,
+        "lon_parada": -70.64951515,
+        "evasiones": 2
     },
     {
-        "id_parada":"PB11",
-        "nombre_parada":"PB11-Avenida Dorsal \/ Esq. Diag. José M. Caro",
-        "lat_parada":-33.39529257,
-        "lon_parada":-70.65289231,
-        "evasiones":0
+        "id_parada": "PB11",
+        "nombre_parada": "PB11-Avenida Dorsal / Esq. Diag. Jos\u00c3\u00a9 M. Caro",
+        "lat_parada": -33.39529257,
+        "lon_parada": -70.65289231,
+        "evasiones": 0
     },
     {
-        "id_parada":"PB14",
-        "nombre_parada":"PB14-Avenida Dorsal \/ Esq. Araguayas",
-        "lat_parada":-33.39634881,
-        "lon_parada":-70.66150835,
-        "evasiones":0
+        "id_parada": "PB14",
+        "nombre_parada": "PB14-Avenida Dorsal / Esq. Araguayas",
+        "lat_parada": -33.39634881,
+        "lon_parada": -70.66150835,
+        "evasiones": 0
     },
     {
-        "id_parada":"PB1469",
-        "nombre_parada":"PB1469-Roma \/ Esq. B. De Juras Reales",
-        "lat_parada":-33.40025124,
-        "lon_parada":-70.67652687,
-        "evasiones":0
+        "id_parada": "PB1469",
+        "nombre_parada": "PB1469-Roma / Esq. B. De Juras Reales",
+        "lat_parada": -33.40025124,
+        "lon_parada": -70.67652687,
+        "evasiones": 0
     },
     {
-        "id_parada":"PB15",
-        "nombre_parada":"PB15-Avenida Dorsal \/ Esq. Cencerro",
-        "lat_parada":-33.39689738,
-        "lon_parada":-70.66503094,
-        "evasiones":0
+        "id_parada": "PB15",
+        "nombre_parada": "PB15-Avenida Dorsal / Esq. Cencerro",
+        "lat_parada": -33.39689738,
+        "lon_parada": -70.66503094,
+        "evasiones": 0
     },
     {
-        "id_parada":"PB1563",
-        "nombre_parada":"PB1563-Parada 4 \/ Norte Sur - Dorsal",
-        "lat_parada":-33.40220205,
-        "lon_parada":-70.68194565,
-        "evasiones":0
+        "id_parada": "PB1563",
+        "nombre_parada": "PB1563-Parada 4 / Norte Sur - Dorsal",
+        "lat_parada": -33.40220205,
+        "lon_parada": -70.68194565,
+        "evasiones": 0
     },
     {
-        "id_parada":"PB1587",
-        "nombre_parada":"PB1587-Avenida Dorsal \/ Esq. El Guanaco",
-        "lat_parada":-33.39576729,
-        "lon_parada":-70.65704759,
-        "evasiones":0
+        "id_parada": "PB1587",
+        "nombre_parada": "PB1587-Avenida Dorsal / Esq. El Guanaco",
+        "lat_parada": -33.39576729,
+        "lon_parada": -70.65704759,
+        "evasiones": 0
     },
     {
-        "id_parada":"PB16",
-        "nombre_parada":"PB16-Parada 2 \/ (M) Conchalí",
-        "lat_parada":-33.39755521,
-        "lon_parada":-70.66906906,
-        "evasiones":0
+        "id_parada": "PB16",
+        "nombre_parada": "PB16-Parada 2 / (M) Conchal\u00c3\u00ad",
+        "lat_parada": -33.39755521,
+        "lon_parada": -70.66906906,
+        "evasiones": 0
     },
     {
-        "id_parada":"PB18",
-        "nombre_parada":"PB18-Roma \/ Esq. La Primavera",
-        "lat_parada":-33.39921804,
-        "lon_parada":-70.6736892,
-        "evasiones":0
+        "id_parada": "PB18",
+        "nombre_parada": "PB18-Roma / Esq. La Primavera",
+        "lat_parada": -33.39921804,
+        "lon_parada": -70.6736892,
+        "evasiones": 0
     },
     {
-        "id_parada":"PB2",
-        "nombre_parada":"PB2-Venezuela \/ Esq. H. De La Concepción",
-        "lat_parada":-33.40245308,
-        "lon_parada":-70.62663925,
-        "evasiones":0
+        "id_parada": "PB2",
+        "nombre_parada": "PB2-Venezuela / Esq. H. De La Concepci\u00c3\u00b3n",
+        "lat_parada": -33.40245308,
+        "lon_parada": -70.62663925,
+        "evasiones": 0
     },
     {
-        "id_parada":"PB2012",
-        "nombre_parada":"PB2012-Parada 3 \/ Plaza Renca",
-        "lat_parada":-33.40516243,
-        "lon_parada":-70.703977,
-        "evasiones":0
+        "id_parada": "PB2012",
+        "nombre_parada": "PB2012-Parada 3 / Plaza Renca",
+        "lat_parada": -33.40516243,
+        "lon_parada": -70.703977,
+        "evasiones": 0
     },
     {
-        "id_parada":"PB2015",
-        "nombre_parada":"PB2015-Senador Jaime Guzmán \/ Esq. Caupolicán",
-        "lat_parada":-33.40201277,
-        "lon_parada":-70.70136812,
-        "evasiones":0
+        "id_parada": "PB2015",
+        "nombre_parada": "PB2015-Senador Jaime Guzm\u00c3\u00a1n / Esq. Caupolic\u00c3\u00a1n",
+        "lat_parada": -33.40201277,
+        "lon_parada": -70.70136812,
+        "evasiones": 0
     },
     {
-        "id_parada":"PB2018",
-        "nombre_parada":"PB2018-Senador Jaime Guzmán \/ Esq. Av. Apóstol Santiago",
-        "lat_parada":-33.39998047,
-        "lon_parada":-70.69662117,
-        "evasiones":0
+        "id_parada": "PB2018",
+        "nombre_parada": "PB2018-Senador Jaime Guzm\u00c3\u00a1n / Esq. Av. Ap\u00c3\u00b3stol Santiago",
+        "lat_parada": -33.39998047,
+        "lon_parada": -70.69662117,
+        "evasiones": 0
     },
     {
-        "id_parada":"PB2022",
-        "nombre_parada":"PB2022-Senador Jaime Guzmán \/ Esq. Colón",
-        "lat_parada":-33.40033351,
-        "lon_parada":-70.69347588,
-        "evasiones":0
+        "id_parada": "PB2022",
+        "nombre_parada": "PB2022-Senador Jaime Guzm\u00c3\u00a1n / Esq. Col\u00c3\u00b3n",
+        "lat_parada": -33.40033351,
+        "lon_parada": -70.69347588,
+        "evasiones": 0
     },
     {
-        "id_parada":"PB2024",
-        "nombre_parada":"PB2024-Senador Jaime Guzmán \/ Esq. Camino Lo Ruiz",
-        "lat_parada":-33.40274609,
-        "lon_parada":-70.68570363,
-        "evasiones":0
+        "id_parada": "PB2024",
+        "nombre_parada": "PB2024-Senador Jaime Guzm\u00c3\u00a1n / Esq. Camino Lo Ruiz",
+        "lat_parada": -33.40274609,
+        "lon_parada": -70.68570363,
+        "evasiones": 0
     },
     {
-        "id_parada":"PB3",
-        "nombre_parada":"PB3-Reina De Chile \/ Esq. Avenida El Salto",
-        "lat_parada":-33.40121867,
-        "lon_parada":-70.62973466,
-        "evasiones":0
+        "id_parada": "PB3",
+        "nombre_parada": "PB3-Reina De Chile / Esq. Avenida El Salto",
+        "lat_parada": -33.40121867,
+        "lon_parada": -70.62973466,
+        "evasiones": 0
     },
     {
-        "id_parada":"PB4",
-        "nombre_parada":"PB4-Pedro Donoso \/ Esq. Santa Ana",
-        "lat_parada":-33.3992259,
-        "lon_parada":-70.63297857,
-        "evasiones":0
+        "id_parada": "PB4",
+        "nombre_parada": "PB4-Pedro Donoso / Esq. Santa Ana",
+        "lat_parada": -33.3992259,
+        "lon_parada": -70.63297857,
+        "evasiones": 0
     },
     {
-        "id_parada":"PB5",
-        "nombre_parada":"PB5-Pedro Donoso \/ Esq. María Del Pilar",
-        "lat_parada":-33.39833374,
-        "lon_parada":-70.63681129,
-        "evasiones":0
+        "id_parada": "PB5",
+        "nombre_parada": "PB5-Pedro Donoso / Esq. Mar\u00c3\u00ada Del Pilar",
+        "lat_parada": -33.39833374,
+        "lon_parada": -70.63681129,
+        "evasiones": 0
     },
     {
-        "id_parada":"PB6",
-        "nombre_parada":"PB6-Pedro Donoso \/ Esq. Las Orquídeas",
-        "lat_parada":-33.39745681,
-        "lon_parada":-70.64041103,
-        "evasiones":0
+        "id_parada": "PB6",
+        "nombre_parada": "PB6-Pedro Donoso / Esq. Las Orqu\u00c3\u00addeas",
+        "lat_parada": -33.39745681,
+        "lon_parada": -70.64041103,
+        "evasiones": 0
     },
     {
-        "id_parada":"PB7",
-        "nombre_parada":"PB7-Parada 4 \/ (M) Dorsal",
-        "lat_parada":-33.39676345,
-        "lon_parada":-70.643284,
-        "evasiones":0
+        "id_parada": "PB7",
+        "nombre_parada": "PB7-Parada 4 / (M) Dorsal",
+        "lat_parada": -33.39676345,
+        "lon_parada": -70.643284,
+        "evasiones": 0
     },
     {
-        "id_parada":"PB8",
-        "nombre_parada":"PB8-Avenida Dorsal \/ Esq. Atlántida",
-        "lat_parada":-33.39608682,
-        "lon_parada":-70.64619311,
-        "evasiones":0
+        "id_parada": "PB8",
+        "nombre_parada": "PB8-Avenida Dorsal / Esq. Atl\u00c3\u00a1ntida",
+        "lat_parada": -33.39608682,
+        "lon_parada": -70.64619311,
+        "evasiones": 0
     },
     {
-        "id_parada":"PI1",
-        "nombre_parada":"PI1-Avenida Las Rejas \/ Esq. Agustín López",
-        "lat_parada":-33.4606994,
-        "lon_parada":-70.705341,
-        "evasiones":0
+        "id_parada": "PI1",
+        "nombre_parada": "PI1-Avenida Las Rejas / Esq. Agust\u00c3\u00adn L\u00c3\u00b3pez",
+        "lat_parada": -33.4606994,
+        "lon_parada": -70.705341,
+        "evasiones": 0
     },
     {
-        "id_parada":"PI10",
-        "nombre_parada":"PI10-Av. Lo Errázuriz \/ Esq. Bernard Shaw",
-        "lat_parada":-33.47621009,
-        "lon_parada":-70.722891,
-        "evasiones":0
+        "id_parada": "PI10",
+        "nombre_parada": "PI10-Av. Lo Err\u00c3\u00a1zuriz / Esq. Bernard Shaw",
+        "lat_parada": -33.47621009,
+        "lon_parada": -70.722891,
+        "evasiones": 0
     },
     {
-        "id_parada":"PI11",
-        "nombre_parada":"PI11-Av. Lo Errázuriz \/ Esq. Estrella Polar",
-        "lat_parada":-33.47895708,
-        "lon_parada":-70.7234,
-        "evasiones":0
+        "id_parada": "PI11",
+        "nombre_parada": "PI11-Av. Lo Err\u00c3\u00a1zuriz / Esq. Estrella Polar",
+        "lat_parada": -33.47895708,
+        "lon_parada": -70.7234,
+        "evasiones": 0
     },
     {
-        "id_parada":"PI12",
-        "nombre_parada":"PI12-Av. Lo Errázuriz \/ Esq. Isabel Riquelme",
-        "lat_parada":-33.48153805,
-        "lon_parada":-70.724594,
-        "evasiones":0
+        "id_parada": "PI12",
+        "nombre_parada": "PI12-Av. Lo Err\u00c3\u00a1zuriz / Esq. Isabel Riquelme",
+        "lat_parada": -33.48153805,
+        "lon_parada": -70.724594,
+        "evasiones": 0
     },
     {
-        "id_parada":"PI1242",
-        "nombre_parada":"PI1242-Avenida Las Torres \/ Esq. Acapulco",
-        "lat_parada":-33.50604095,
-        "lon_parada":-70.73565256,
-        "evasiones":0
+        "id_parada": "PI1242",
+        "nombre_parada": "PI1242-Avenida Las Torres / Esq. Acapulco",
+        "lat_parada": -33.50604095,
+        "lon_parada": -70.73565256,
+        "evasiones": 0
     },
     {
-        "id_parada":"PI1243",
-        "nombre_parada":"PI1243-Avenida Las Torres \/ Esq. La Primavera",
-        "lat_parada":-33.50822786,
-        "lon_parada":-70.735167,
-        "evasiones":0
+        "id_parada": "PI1243",
+        "nombre_parada": "PI1243-Avenida Las Torres / Esq. La Primavera",
+        "lat_parada": -33.50822786,
+        "lon_parada": -70.735167,
+        "evasiones": 0
     },
     {
-        "id_parada":"PI13",
-        "nombre_parada":"PI13-Parada \/ Parque Lo Errázuriz",
-        "lat_parada":-33.48565505,
-        "lon_parada":-70.724762,
-        "evasiones":0
+        "id_parada": "PI13",
+        "nombre_parada": "PI13-Parada / Parque Lo Err\u00c3\u00a1zuriz",
+        "lat_parada": -33.48565505,
+        "lon_parada": -70.724762,
+        "evasiones": 0
     },
     {
-        "id_parada":"PI1321",
-        "nombre_parada":"PI1321-Parada 3 \/ Colegio Don Orione",
-        "lat_parada":-33.50358703,
-        "lon_parada":-70.71160574,
-        "evasiones":0
+        "id_parada": "PI1321",
+        "nombre_parada": "PI1321-Parada 3 / Colegio Don Orione",
+        "lat_parada": -33.50358703,
+        "lon_parada": -70.71160574,
+        "evasiones": 0
     },
     {
-        "id_parada":"PI1323",
-        "nombre_parada":"PI1323-Parada 3 \/ El Mirador",
-        "lat_parada":-33.50534762,
-        "lon_parada":-70.71349021,
-        "evasiones":0
+        "id_parada": "PI1323",
+        "nombre_parada": "PI1323-Parada 3 / El Mirador",
+        "lat_parada": -33.50534762,
+        "lon_parada": -70.71349021,
+        "evasiones": 0
     },
     {
-        "id_parada":"PI14",
-        "nombre_parada":"PI14-Av. Lo Errázuriz \/ Esq. Los Presidentes",
-        "lat_parada":-33.48756206,
-        "lon_parada":-70.7242,
-        "evasiones":0
+        "id_parada": "PI14",
+        "nombre_parada": "PI14-Av. Lo Err\u00c3\u00a1zuriz / Esq. Los Presidentes",
+        "lat_parada": -33.48756206,
+        "lon_parada": -70.7242,
+        "evasiones": 0
     },
     {
-        "id_parada":"PI1440",
-        "nombre_parada":"PI1440-Av. Lo Errázuriz \/ Esq. Rosa E. Rodríguez",
-        "lat_parada":-33.48899968,
-        "lon_parada":-70.72380385,
-        "evasiones":0
+        "id_parada": "PI1440",
+        "nombre_parada": "PI1440-Av. Lo Err\u00c3\u00a1zuriz / Esq. Rosa E. Rodr\u00c3\u00adguez",
+        "lat_parada": -33.48899968,
+        "lon_parada": -70.72380385,
+        "evasiones": 0
     },
     {
-        "id_parada":"PI1489",
-        "nombre_parada":"PI1489-Parada 3 \/ 5 De Abril - Las Rejas",
-        "lat_parada":-33.46434641,
-        "lon_parada":-70.705212,
-        "evasiones":0
+        "id_parada": "PI1489",
+        "nombre_parada": "PI1489-Parada 3 / 5 De Abril - Las Rejas",
+        "lat_parada": -33.46434641,
+        "lon_parada": -70.705212,
+        "evasiones": 0
     },
     {
-        "id_parada":"PI15",
-        "nombre_parada":"PI15-Av. Lo Errázuriz \/ Esq. Avenida Cerrillos",
-        "lat_parada":-33.49139966,
-        "lon_parada":-70.72246385,
-        "evasiones":0
+        "id_parada": "PI15",
+        "nombre_parada": "PI15-Av. Lo Err\u00c3\u00a1zuriz / Esq. Avenida Cerrillos",
+        "lat_parada": -33.49139966,
+        "lon_parada": -70.72246385,
+        "evasiones": 0
     },
     {
-        "id_parada":"PI16",
-        "nombre_parada":"PI16-Av. Lo Errázuriz \/ Esq. Arrecife",
-        "lat_parada":-33.49439809,
-        "lon_parada":-70.722419,
-        "evasiones":0
+        "id_parada": "PI16",
+        "nombre_parada": "PI16-Av. Lo Err\u00c3\u00a1zuriz / Esq. Arrecife",
+        "lat_parada": -33.49439809,
+        "lon_parada": -70.722419,
+        "evasiones": 0
     },
     {
-        "id_parada":"PI1635",
-        "nombre_parada":"PI1635-El Mirador \/ Esq. Divino Maestro",
-        "lat_parada":-33.50222697,
-        "lon_parada":-70.729277,
-        "evasiones":0
+        "id_parada": "PI1635",
+        "nombre_parada": "PI1635-El Mirador / Esq. Divino Maestro",
+        "lat_parada": -33.50222697,
+        "lon_parada": -70.729277,
+        "evasiones": 0
     },
     {
-        "id_parada":"PI1640",
-        "nombre_parada":"PI1640-El Mirador \/ Esq. Ganímedes",
-        "lat_parada":-33.50208292,
-        "lon_parada":-70.731849,
-        "evasiones":0
+        "id_parada": "PI1640",
+        "nombre_parada": "PI1640-El Mirador / Esq. Gan\u00c3\u00admedes",
+        "lat_parada": -33.50208292,
+        "lon_parada": -70.731849,
+        "evasiones": 0
     },
     {
-        "id_parada":"PI1641",
-        "nombre_parada":"PI1641-El Mirador \/ Esq. Santa Teresita",
-        "lat_parada":-33.50320303,
-        "lon_parada":-70.725901,
-        "evasiones":0
+        "id_parada": "PI1641",
+        "nombre_parada": "PI1641-El Mirador / Esq. Santa Teresita",
+        "lat_parada": -33.50320303,
+        "lon_parada": -70.725901,
+        "evasiones": 0
     },
     {
-        "id_parada":"PI1642",
-        "nombre_parada":"PI1642-El Mirador \/ Esq. Los Fundadores",
-        "lat_parada":-33.50386099,
-        "lon_parada":-70.72398288,
-        "evasiones":0
+        "id_parada": "PI1642",
+        "nombre_parada": "PI1642-El Mirador / Esq. Los Fundadores",
+        "lat_parada": -33.50386099,
+        "lon_parada": -70.72398288,
+        "evasiones": 0
     },
     {
-        "id_parada":"PI1643",
-        "nombre_parada":"PI1643-El Mirador \/ Esq. Pablo Suárez",
-        "lat_parada":-33.50442534,
-        "lon_parada":-70.72055,
-        "evasiones":0
+        "id_parada": "PI1643",
+        "nombre_parada": "PI1643-El Mirador / Esq. Pablo Su\u00c3\u00a1rez",
+        "lat_parada": -33.50442534,
+        "lon_parada": -70.72055,
+        "evasiones": 0
     },
     {
-        "id_parada":"PI18",
-        "nombre_parada":"PI18-Av. Lo Errázuriz \/ Esq. San Juan",
-        "lat_parada":-33.49741419,
-        "lon_parada":-70.71856684,
-        "evasiones":0
+        "id_parada": "PI18",
+        "nombre_parada": "PI18-Av. Lo Err\u00c3\u00a1zuriz / Esq. San Juan",
+        "lat_parada": -33.49741419,
+        "lon_parada": -70.71856684,
+        "evasiones": 0
     },
     {
-        "id_parada":"PI19",
-        "nombre_parada":"PI19-Av. Lo Errázuriz \/ Esq. Don Orione",
-        "lat_parada":-33.4984982,
-        "lon_parada":-70.716553,
-        "evasiones":0
+        "id_parada": "PI19",
+        "nombre_parada": "PI19-Av. Lo Err\u00c3\u00a1zuriz / Esq. Don Orione",
+        "lat_parada": -33.4984982,
+        "lon_parada": -70.716553,
+        "evasiones": 0
     },
     {
-        "id_parada":"PI20",
-        "nombre_parada":"PI20-Av. Lo Errázuriz \/ Esq. San Marcos",
-        "lat_parada":-33.49985896,
-        "lon_parada":-70.71398884,
-        "evasiones":0
+        "id_parada": "PI20",
+        "nombre_parada": "PI20-Av. Lo Err\u00c3\u00a1zuriz / Esq. San Marcos",
+        "lat_parada": -33.49985896,
+        "lon_parada": -70.71398884,
+        "evasiones": 0
     },
     {
-        "id_parada":"PI21",
-        "nombre_parada":"PI21-Av. Lo Errázuriz \/ Esq. Av. P. Aguirre Cerda",
-        "lat_parada":-33.50082931,
-        "lon_parada":-70.710392,
-        "evasiones":0
+        "id_parada": "PI21",
+        "nombre_parada": "PI21-Av. Lo Err\u00c3\u00a1zuriz / Esq. Av. P. Aguirre Cerda",
+        "lat_parada": -33.50082931,
+        "lon_parada": -70.710392,
+        "evasiones": 0
     },
     {
-        "id_parada":"PI24",
-        "nombre_parada":"PI24-El Mirador \/ Esq. Tongoy",
-        "lat_parada":-33.50520529,
-        "lon_parada":-70.71585214,
-        "evasiones":0
+        "id_parada": "PI24",
+        "nombre_parada": "PI24-El Mirador / Esq. Tongoy",
+        "lat_parada": -33.50520529,
+        "lon_parada": -70.71585214,
+        "evasiones": 0
     },
     {
-        "id_parada":"PI25",
-        "nombre_parada":"PI25-El Mirador \/ Esq. Don Orione",
-        "lat_parada":-33.50487918,
-        "lon_parada":-70.717835,
-        "evasiones":0
+        "id_parada": "PI25",
+        "nombre_parada": "PI25-El Mirador / Esq. Don Orione",
+        "lat_parada": -33.50487918,
+        "lon_parada": -70.717835,
+        "evasiones": 0
     },
     {
-        "id_parada":"PI3",
-        "nombre_parada":"PI3-Avenida 5 De Abril \/ Esq. Catalpas Pte.",
-        "lat_parada":-33.46573081,
-        "lon_parada":-70.70854789,
-        "evasiones":0
+        "id_parada": "PI3",
+        "nombre_parada": "PI3-Avenida 5 De Abril / Esq. Catalpas Pte.",
+        "lat_parada": -33.46573081,
+        "lon_parada": -70.70854789,
+        "evasiones": 0
     },
     {
-        "id_parada":"PI4",
-        "nombre_parada":"PI4-Avenida 5 De Abril \/ Esq. Los Duraznos",
-        "lat_parada":-33.46682225,
-        "lon_parada":-70.7105269,
-        "evasiones":0
+        "id_parada": "PI4",
+        "nombre_parada": "PI4-Avenida 5 De Abril / Esq. Los Duraznos",
+        "lat_parada": -33.46682225,
+        "lon_parada": -70.7105269,
+        "evasiones": 0
     },
     {
-        "id_parada":"PI5",
-        "nombre_parada":"PI5-Avenida 5 De Abril \/ Esq. Vista Hermosa",
-        "lat_parada":-33.46827126,
-        "lon_parada":-70.71362,
-        "evasiones":0
+        "id_parada": "PI5",
+        "nombre_parada": "PI5-Avenida 5 De Abril / Esq. Vista Hermosa",
+        "lat_parada": -33.46827126,
+        "lon_parada": -70.71362,
+        "evasiones": 0
     },
     {
-        "id_parada":"PI6",
-        "nombre_parada":"PI6-Avenida 5 De Abril \/ Esq. Vista Hermosa",
-        "lat_parada":-33.46937921,
-        "lon_parada":-70.715974,
-        "evasiones":0
+        "id_parada": "PI6",
+        "nombre_parada": "PI6-Avenida 5 De Abril / Esq. Vista Hermosa",
+        "lat_parada": -33.46937921,
+        "lon_parada": -70.715974,
+        "evasiones": 0
     },
     {
-        "id_parada":"PI695",
-        "nombre_parada":"PI695-Avenida Las Torres \/ Esq. Av. A. Vespucio",
-        "lat_parada":-33.50373985,
-        "lon_parada":-70.735283,
-        "evasiones":0
+        "id_parada": "PI695",
+        "nombre_parada": "PI695-Avenida Las Torres / Esq. Av. A. Vespucio",
+        "lat_parada": -33.50373985,
+        "lon_parada": -70.735283,
+        "evasiones": 0
     },
     {
-        "id_parada":"PI7",
-        "nombre_parada":"PI7-Avenida 5 De Abril \/ Esq. El Altarcillo",
-        "lat_parada":-33.47039118,
-        "lon_parada":-70.717924,
-        "evasiones":0
+        "id_parada": "PI7",
+        "nombre_parada": "PI7-Avenida 5 De Abril / Esq. El Altarcillo",
+        "lat_parada": -33.47039118,
+        "lon_parada": -70.717924,
+        "evasiones": 0
     },
     {
-        "id_parada":"PI8",
-        "nombre_parada":"PI8-Parada 2 \/ Liceo A70",
-        "lat_parada":-33.47200322,
-        "lon_parada":-70.72041574,
-        "evasiones":0
+        "id_parada": "PI8",
+        "nombre_parada": "PI8-Parada 2 / Liceo A70",
+        "lat_parada": -33.47200322,
+        "lon_parada": -70.72041574,
+        "evasiones": 0
     },
     {
-        "id_parada":"PI9",
-        "nombre_parada":"PI9-Av. Lo Errázuriz \/ Esq. Av. Simón Bolivar",
-        "lat_parada":-33.47374509,
-        "lon_parada":-70.722423,
-        "evasiones":0
+        "id_parada": "PI9",
+        "nombre_parada": "PI9-Av. Lo Err\u00c3\u00a1zuriz / Esq. Av. Sim\u00c3\u00b3n Bolivar",
+        "lat_parada": -33.47374509,
+        "lon_parada": -70.722423,
+        "evasiones": 0
     },
     {
-        "id_parada":"PJ1",
-        "nombre_parada":"PJ1-Lo Espinoza \/ Esq. Samuel Izquierdo",
-        "lat_parada":-33.40952504,
-        "lon_parada":-70.70743086,
-        "evasiones":0
+        "id_parada": "PJ1",
+        "nombre_parada": "PJ1-Lo Espinoza / Esq. Samuel Izquierdo",
+        "lat_parada": -33.40952504,
+        "lon_parada": -70.70743086,
+        "evasiones": 0
     },
     {
-        "id_parada":"PJ10",
-        "nombre_parada":"PJ10-Parada 1 \/ Las Rejas - José J. Pérez",
-        "lat_parada":-33.43187253,
-        "lon_parada":-70.70717056,
-        "evasiones":0
+        "id_parada": "PJ10",
+        "nombre_parada": "PJ10-Parada 1 / Las Rejas - Jos\u00c3\u00a9 J. P\u00c3\u00a9rez",
+        "lat_parada": -33.43187253,
+        "lon_parada": -70.70717056,
+        "evasiones": 0
     },
     {
-        "id_parada":"PJ11",
-        "nombre_parada":"PJ11-Sergio Valdovinos \/ Esq. Vicuña Rozas",
-        "lat_parada":-33.43598137,
-        "lon_parada":-70.70715,
-        "evasiones":0
+        "id_parada": "PJ11",
+        "nombre_parada": "PJ11-Sergio Valdovinos / Esq. Vicu\u00c3\u00b1a Rozas",
+        "lat_parada": -33.43598137,
+        "lon_parada": -70.70715,
+        "evasiones": 0
     },
     {
-        "id_parada":"PJ12",
-        "nombre_parada":"PJ12-Sergio Valdovinos \/ Esq. 9 De Julio",
-        "lat_parada":-33.43854437,
-        "lon_parada":-70.707124,
-        "evasiones":0
+        "id_parada": "PJ12",
+        "nombre_parada": "PJ12-Sergio Valdovinos / Esq. 9 De Julio",
+        "lat_parada": -33.43854437,
+        "lon_parada": -70.707124,
+        "evasiones": 0
     },
     {
-        "id_parada":"PJ14",
-        "nombre_parada":"PJ14-Avenida Las Rejas \/ Esq. Santa Laura",
-        "lat_parada":-33.44382137,
-        "lon_parada":-70.707384,
-        "evasiones":0
+        "id_parada": "PJ14",
+        "nombre_parada": "PJ14-Avenida Las Rejas / Esq. Santa Laura",
+        "lat_parada": -33.44382137,
+        "lon_parada": -70.707384,
+        "evasiones": 0
     },
     {
-        "id_parada":"PJ15",
-        "nombre_parada":"PJ15-Avenida Las Rejas \/ Esq. Avenida Portales",
-        "lat_parada":-33.44577158,
-        "lon_parada":-70.70736833,
-        "evasiones":0
+        "id_parada": "PJ15",
+        "nombre_parada": "PJ15-Avenida Las Rejas / Esq. Avenida Portales",
+        "lat_parada": -33.44577158,
+        "lon_parada": -70.70736833,
+        "evasiones": 0
     },
     {
-        "id_parada":"PJ1582",
-        "nombre_parada":"PJ1582-Av. Las Rejas-Norte \/ Esq. Ciudadela",
-        "lat_parada":-33.44772037,
-        "lon_parada":-70.707295,
-        "evasiones":0
+        "id_parada": "PJ1582",
+        "nombre_parada": "PJ1582-Av. Las Rejas-Norte / Esq. Ciudadela",
+        "lat_parada": -33.44772037,
+        "lon_parada": -70.707295,
+        "evasiones": 0
     },
     {
-        "id_parada":"PJ16",
-        "nombre_parada":"PJ16-Avenida Las Rejas \/ Esq. Avenida Dorsal",
-        "lat_parada":-33.44916919,
-        "lon_parada":-70.70710747,
-        "evasiones":0
+        "id_parada": "PJ16",
+        "nombre_parada": "PJ16-Avenida Las Rejas / Esq. Avenida Dorsal",
+        "lat_parada": -33.44916919,
+        "lon_parada": -70.70710747,
+        "evasiones": 0
     },
     {
-        "id_parada":"PJ17",
-        "nombre_parada":"PJ17-Avenida Las Rejas \/ Esq. Perú",
-        "lat_parada":-33.45179335,
-        "lon_parada":-70.70649607,
-        "evasiones":0
+        "id_parada": "PJ17",
+        "nombre_parada": "PJ17-Avenida Las Rejas / Esq. Per\u00c3\u00ba",
+        "lat_parada": -33.45179335,
+        "lon_parada": -70.70649607,
+        "evasiones": 0
     },
     {
-        "id_parada":"PJ18",
-        "nombre_parada":"PJ18-Parada 11 \/ (M) Las Rejas",
-        "lat_parada":-33.45678971,
-        "lon_parada":-70.70570842,
-        "evasiones":0
+        "id_parada": "PJ18",
+        "nombre_parada": "PJ18-Parada 11 / (M) Las Rejas",
+        "lat_parada": -33.45678971,
+        "lon_parada": -70.70570842,
+        "evasiones": 0
     },
     {
-        "id_parada":"PJ2",
-        "nombre_parada":"PJ2-Lo Espinoza \/ Esq. Carmen Lidia",
-        "lat_parada":-33.41212539,
-        "lon_parada":-70.706268,
-        "evasiones":0
+        "id_parada": "PJ2",
+        "nombre_parada": "PJ2-Lo Espinoza / Esq. Carmen Lidia",
+        "lat_parada": -33.41212539,
+        "lon_parada": -70.706268,
+        "evasiones": 0
     },
     {
-        "id_parada":"PJ3",
-        "nombre_parada":"PJ3-Lo Espinoza \/ Esq. Calle 7",
-        "lat_parada":-33.41584242,
-        "lon_parada":-70.704666,
-        "evasiones":0
+        "id_parada": "PJ3",
+        "nombre_parada": "PJ3-Lo Espinoza / Esq. Calle 7",
+        "lat_parada": -33.41584242,
+        "lon_parada": -70.704666,
+        "evasiones": 0
     },
     {
-        "id_parada":"PJ4",
-        "nombre_parada":"PJ4-Lo Espinoza \/ Esq. Pasaje Antártica",
-        "lat_parada":-33.41829444,
-        "lon_parada":-70.703587,
-        "evasiones":0
+        "id_parada": "PJ4",
+        "nombre_parada": "PJ4-Lo Espinoza / Esq. Pasaje Ant\u00c3\u00a1rtica",
+        "lat_parada": -33.41829444,
+        "lon_parada": -70.703587,
+        "evasiones": 0
     },
     {
-        "id_parada":"PJ9",
-        "nombre_parada":"PJ9-Sergio Valdovinos \/ Esq. Cónsul Poinsett",
-        "lat_parada":-33.42897138,
-        "lon_parada":-70.706618,
-        "evasiones":0
+        "id_parada": "PJ9",
+        "nombre_parada": "PJ9-Sergio Valdovinos / Esq. C\u00c3\u00b3nsul Poinsett",
+        "lat_parada": -33.42897138,
+        "lon_parada": -70.706618,
+        "evasiones": 0
     }
 ]
