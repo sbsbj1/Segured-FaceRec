@@ -5,6 +5,8 @@ document.addEventListener('DOMContentLoaded', function () {
         attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
     }).addTo(map);
 
+    let marcadores = {};
+
     // Cargar los datos de paradas
     fetch('paradas.json')
         .then(response => response.json())
@@ -14,9 +16,12 @@ document.addEventListener('DOMContentLoaded', function () {
                 const marker = L.marker([parada.lat_parada, parada.lon_parada]).addTo(map);
                 // Agregar un popup con información
                 marker.bindPopup(`<strong>${parada.nombre_parada}</strong><br>Evasiones: ${parada.evasiones}`);
+                // Agregar el marcador al objeto de marcadores
+                marcadores[parada.id_parada] = marker;
             });
         })
         .catch(error => console.error('Error al cargar las paradas:', error));
+
 
     // Mostrar el card deck de bootstrap
     const btnEstadisticas = document.getElementById('btnEstadisticas');
@@ -52,4 +57,46 @@ document.addEventListener('DOMContentLoaded', function () {
             })
             .catch(error => console.error('Error al cargar el JSON:', error));
     });
+
+    const btnGenerarReporte = document.getElementById('btnGenerarReporte');
+
+    btnGenerarReporte.addEventListener('click', function () {
+        fetch('paradas.json')
+        .then(response => response.json())
+        .then(data => {
+            const fecha = new Date().toISOString();   //Se crea la fecha y se pasa al formato ISO de fechas
+            const nombreArchivo = 'reporte-ruta101-' + fecha + '.json';   //se junta en el nombreArchivo
+            const jsonStr = JSON.stringify(data, null, 4);         
+            const blob = new Blob([jsonStr], {type: 'application/json'});
+
+
+            //Para que se descargue:
+            const a = document.createElement('a');
+            a.href = URL.createObjectURL(blob);
+            a.download = nombreArchivo;
+            a.click();
+            document.body.removeChild(a);
+            URL.revokeObjectURL(a.href);
+        })
+    });
+
+    const btnBuscarParadas = document.getElementById('btnBuscarParadas');
+    const inputParadaID = document.getElementById('inputParadaID');
+    btnBuscarParadas.addEventListener('click', function () {
+        const paradaID = inputParadaID.value.trim();
+        if (!paradaID) {
+            alert('Debe ingresar un ID de parada');
+            return;
+        }
+
+        const marcador = marcadores[paradaID];
+        if (marcador) {
+            marcador.openPopup();
+            map.setView(marcador.getLatLng(), 15); //se centra el mapa en el marcador
+        } else {
+            alert('No se encontró una parada con ese ID');
+        }
+        
+        });
 });
+

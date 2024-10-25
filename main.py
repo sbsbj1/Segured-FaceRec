@@ -5,6 +5,7 @@ import time
 import json
 
 ruta_json = "interfaz/paradas.json"
+estado_file_path = "estado.txt"
 
 def registrar_evasion_json(id_parada):
     # Leer el archivo JSON
@@ -21,6 +22,31 @@ def registrar_evasion_json(id_parada):
     # Guardar los cambios en el archivo JSON
     with open(ruta_json, "w") as archivo:
         json.dump(paradas, archivo, indent=4)
+
+def leer_estado():
+    if os.path.exists(estado_file_path):
+        with open(estado_file_path, "r") as archivo:
+            return int(archivo.read().strip())
+    return -1
+
+def escribir_estado(indice):
+    with open(estado_file_path, "w") as archivo:
+        archivo.write(str(indice))
+
+def manejar_evasor():
+    last_index = leer_estado()
+    last_index += 1
+
+    with open(ruta_json, "r") as archivo:
+        paradas = json.load(archivo)
+
+    if last_index >= len(paradas):
+        last_index = 0  # Reiniciar al principio si llegamos al final de la lista
+
+    paradero_actual = paradas[last_index]
+    registrar_evasion_json(paradero_actual["id_parada"])
+
+    escribir_estado(last_index)
 
 # Crear carpetas si no existen
 if not os.path.exists('base_de_datos'):
@@ -50,7 +76,6 @@ evasor_counter = 0
 # Tiempo mínimo entre capturas del mismo rostro (en segundos)
 TIME_THRESHOLD = 5  # 5 segundos
 last_evasor_capture_time = time.time()  # Control de tiempo entre capturas
-
 
 # Función para comparar características con ORB
 def compare_faces(orb, img1, img2):
@@ -225,7 +250,7 @@ def check_fare_evaders(cap):
                     last_evasor_capture_time = time.time()
 
                     # Registrar la evasión en el archivo JSON
-                    registrar_evasion_json("PB10")  # Aquí debes pasar el id_parada correspondiente
+                    manejar_evasor()  # Aquí se maneja la evasión secuencialmente
 
         cv2.imshow('Camara General', frame)
 

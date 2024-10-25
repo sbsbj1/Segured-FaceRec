@@ -4,42 +4,42 @@
         "nombre_parada": "PB1-Venezuela / Esq. Bolivia",
         "lat_parada": -33.40455376,
         "lon_parada": -70.62309515,
-        "evasiones": 0
+        "evasiones": 1
     },
     {
         "id_parada": "PB10",
         "nombre_parada": "PB10-Avenida Dorsal / Esq. Jos\u00c3\u00a9 Miguel Carrera",
         "lat_parada": -33.3957367,
         "lon_parada": -70.64951515,
-        "evasiones": 2
+        "evasiones": 1
     },
     {
         "id_parada": "PB11",
         "nombre_parada": "PB11-Avenida Dorsal / Esq. Diag. Jos\u00c3\u00a9 M. Caro",
         "lat_parada": -33.39529257,
         "lon_parada": -70.65289231,
-        "evasiones": 0
+        "evasiones": 1
     },
     {
         "id_parada": "PB14",
         "nombre_parada": "PB14-Avenida Dorsal / Esq. Araguayas",
         "lat_parada": -33.39634881,
         "lon_parada": -70.66150835,
-        "evasiones": 0
+        "evasiones": 1
     },
     {
         "id_parada": "PB1469",
         "nombre_parada": "PB1469-Roma / Esq. B. De Juras Reales",
         "lat_parada": -33.40025124,
         "lon_parada": -70.67652687,
-        "evasiones": 0
+        "evasiones": 1
     },
     {
         "id_parada": "PB15",
         "nombre_parada": "PB15-Avenida Dorsal / Esq. Cencerro",
         "lat_parada": -33.39689738,
         "lon_parada": -70.66503094,
-        "evasiones": 0
+        "evasiones": 1
     },
     {
         "id_parada": "PB1563",
