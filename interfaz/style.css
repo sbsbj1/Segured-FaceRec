@@ -1,4 +1,6 @@
-
+#datetime {
+    color: darkgray;
+}
 
 .center-buttons {
     display: flex;

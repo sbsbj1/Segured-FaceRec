@@ -98,5 +98,15 @@ document.addEventListener('DOMContentLoaded', function () {
         }
         
         });
+    
+    function updatefecha(){
+        const date = new Date(); //creamos el objeto
+
+        const fechaActual = date.toLocaleDateString(); //obtenemos la fecha actual como string
+
+        document.querySelector('#datetime').textContent = fechaActual; //actualizamos el span del HTML
+
+    }
+    setInterval(updatefecha, 1000);  //aqui llamamos la funcion del tiempo cada segundo
 });
 
