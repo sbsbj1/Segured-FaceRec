@@ -3,6 +3,7 @@ import os
 import numpy as np
 import time
 import json
+from database import insertar_pasajero, insertar_imagen, insertar_comparacion
 
 ruta_json = "interfaz/paradas.json"
 estado_file_path = "estado.txt"
@@ -94,6 +95,39 @@ def compare_faces(orb, img1, img2):
 
     return len(good_matches) > 15  # Umbral de coincidencias
 
+# Función para guardar la imagen y registrar en la base de datos
+def guardar_imagen_y_registrar(id_viaje, face_resized, es_pagador=True):
+    global pagador_counter, evasor_counter
+    # Guardar el rostro en la carpeta correspondiente
+    tipo = "pagadores" if es_pagador else "evasores"
+    contador = pagador_counter if es_pagador else evasor_counter
+    imagen_path = f"base_de_datos/{tipo}/{tipo}_{contador}.png"
+    cv2.imwrite(imagen_path, face_resized)
+
+    # Insertar el pasajero en la base de datos
+    id_pasajero = insertar_pasajero()
+
+    # Registrar la imagen en la base de datos
+    id_imagen = insertar_imagen(id_pasajero, id_viaje, imagen_path)
+
+    # Verificar que la inserción de la imagen fue exitosa
+    if id_imagen is None:
+        print("Error al insertar la imagen en la base de datos.")
+        return
+
+    # Si es un evasor, registrar la comparación
+    if not es_pagador:
+        insertar_comparacion(id_imagen, resultado=0)  # Resultado 0 para evasores
+        print(f"Evasor guardado en: {imagen_path}")
+    else:
+        print(f"Pagador guardado en: {imagen_path}")
+
+    # Incrementar el contador correspondiente
+    if es_pagador:
+        pagador_counter += 1
+    else:
+        evasor_counter += 1
+
 # Función para capturar y registrar rostros en la cámara de pago
 def capture_paying_faces(cap):
     global pagador_counter
@@ -154,11 +188,8 @@ def capture_paying_faces(cap):
                 # Guardar descriptores del rostro y la imagen
                 known_faces_images.append(face_resized)
 
-                # Guardar el rostro en la carpeta de pagadores
-                pagador_path = f"base_de_datos/pagadores/pagador_{pagador_counter}.png"
-                cv2.imwrite(pagador_path, face_resized)
-                print(f"Rostro guardado en: {pagador_path}")
-                pagador_counter += 1
+                # Registrar en base de datos
+                guardar_imagen_y_registrar("101-I-L-B02", face_resized, es_pagador=True)
 
                 # Dibujar el cuadro verde alrededor del rostro
                 cv2.rectangle(frame, (x, y), (x + w, y + h), (0, 255, 0), 2)
@@ -235,11 +266,8 @@ def check_fare_evaders(cap):
                     # Dibujar cuadro verde sin texto para los pagadores
                     cv2.rectangle(frame, (x, y), (x + w, y + h), (0, 255, 0), 2)
                 else:
-                    # Guardar el rostro en la carpeta de evasores
-                    evasor_path = f"base_de_datos/evasores/evasor_{evasor_counter}.png"
-                    cv2.imwrite(evasor_path, face_resized)
-                    print(f"Evasor guardado en: {evasor_path}")
-                    evasor_counter += 1
+                    # Guardar base de datos
+                    guardar_imagen_y_registrar("101-I-L-B02", face_resized, es_pagador=False)
 
                     # Dibujar cuadro rojo sin texto para los evasores
                     cv2.rectangle(frame, (x, y), (x + w, y + h), (0, 0, 255), 2)
