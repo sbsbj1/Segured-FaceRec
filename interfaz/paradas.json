@@ -32,42 +32,42 @@
         "nombre_parada": "PB1469-Roma / Esq. B. De Juras Reales",
         "lat_parada": -33.40025124,
         "lon_parada": -70.67652687,
-        "evasiones": 1
+        "evasiones": 2
     },
     {
         "id_parada": "PB15",
         "nombre_parada": "PB15-Avenida Dorsal / Esq. Cencerro",
         "lat_parada": -33.39689738,
         "lon_parada": -70.66503094,
-        "evasiones": 1
+        "evasiones": 2
     },
     {
         "id_parada": "PB1563",
         "nombre_parada": "PB1563-Parada 4 / Norte Sur - Dorsal",
         "lat_parada": -33.40220205,
         "lon_parada": -70.68194565,
-        "evasiones": 1
+        "evasiones": 2
     },
     {
         "id_parada": "PB1587",
         "nombre_parada": "PB1587-Avenida Dorsal / Esq. El Guanaco",
         "lat_parada": -33.39576729,
         "lon_parada": -70.65704759,
-        "evasiones": 1
+        "evasiones": 2
     },
     {
         "id_parada": "PB16",
         "nombre_parada": "PB16-Parada 2 / (M) Conchal\u00c3\u00ad",
         "lat_parada": -33.39755521,
         "lon_parada": -70.66906906,
-        "evasiones": 1
+        "evasiones": 2
     },
     {
         "id_parada": "PB18",
         "nombre_parada": "PB18-Roma / Esq. La Primavera",
         "lat_parada": -33.39921804,
         "lon_parada": -70.6736892,
-        "evasiones": 1
+        "evasiones": 2
     },
     {
         "id_parada": "PB2",
@@ -81,49 +81,49 @@
         "nombre_parada": "PB2012-Parada 3 / Plaza Renca",
         "lat_parada": -33.40516243,
         "lon_parada": -70.703977,
-        "evasiones": 1
+        "evasiones": 0
     },
     {
         "id_parada": "PB2015",
         "nombre_parada": "PB2015-Senador Jaime Guzm\u00c3\u00a1n / Esq. Caupolic\u00c3\u00a1n",
         "lat_parada": -33.40201277,
         "lon_parada": -70.70136812,
-        "evasiones": 1
+        "evasiones": 0
     },
     {
         "id_parada": "PB2018",
         "nombre_parada": "PB2018-Senador Jaime Guzm\u00c3\u00a1n / Esq. Av. Ap\u00c3\u00b3stol Santiago",
         "lat_parada": -33.39998047,
         "lon_parada": -70.69662117,
-        "evasiones": 1
+        "evasiones": 0
     },
     {
         "id_parada": "PB2022",
         "nombre_parada": "PB2022-Senador Jaime Guzm\u00c3\u00a1n / Esq. Col\u00c3\u00b3n",
         "lat_parada": -33.40033351,
         "lon_parada": -70.69347588,
-        "evasiones": 1
+        "evasiones": 0
     },
     {
         "id_parada": "PB2024",
         "nombre_parada": "PB2024-Senador Jaime Guzm\u00c3\u00a1n / Esq. Camino Lo Ruiz",
         "lat_parada": -33.40274609,
         "lon_parada": -70.68570363,
-        "evasiones": 1
+        "evasiones": 0
     },
     {
         "id_parada": "PB3",
         "nombre_parada": "PB3-Reina De Chile / Esq. Avenida El Salto",
         "lat_parada": -33.40121867,
         "lon_parada": -70.62973466,
-        "evasiones": 1
+        "evasiones": 0
     },
     {
         "id_parada": "PB4",
         "nombre_parada": "PB4-Pedro Donoso / Esq. Santa Ana",
         "lat_parada": -33.3992259,
         "lon_parada": -70.63297857,
-        "evasiones": 1
+        "evasiones": 0
     },
     {
         "id_parada": "PB5",

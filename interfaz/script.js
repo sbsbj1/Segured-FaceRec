@@ -15,12 +15,31 @@ document.addEventListener('DOMContentLoaded', function () {
                 // Crear un marcador para cada parada
                 const marker = L.marker([parada.lat_parada, parada.lon_parada]).addTo(map);
                 // Agregar un popup con información
-                marker.bindPopup(`<strong>${parada.nombre_parada}</strong><br>Evasiones: ${parada.evasiones}`);
+                marker.bindPopup(`<strong>${parada.nombre_parada}</strong><br>
+    Evasiones: ${parada.evasiones}<br><br>
+    <strong><a href="evasiones.html" onclick="window.location.href='evasiones.html'; return false;">Ver Evasiones</a></strong>`);
                 // Agregar el marcador al objeto de marcadores
                 marcadores[parada.id_parada] = marker;
             });
         })
         .catch(error => console.error('Error al cargar las paradas:', error));
+        
+    const gallery = document.getElementById('gallery');
+
+    const rutaImagenes = 'base_de_datos/evasores/';
+    const imagenes = ['evasores_0.png', 'evasores_1.png', 'evasores_2.png', 'evasores_3.png', 'evasores_4.png'];
+    imagenes.forEach(nombreImagen => {
+        const col = document.createElement('div');
+        col.classList.add('col-lg-4', 'col-md-6', 'mb-4'); //se añaden las clases de bootstrap
+        
+        const img = document.createElement('img');
+        img.src = `${rutaImagenes}${nombreImagen}`;
+        img.alt = nombreImagen;
+        img.classList.add('img-fluid');
+
+        col.appendChild(img);
+        gallery.appendChild(col);
+    })
 
 
     // Mostrar el card deck de bootstrap

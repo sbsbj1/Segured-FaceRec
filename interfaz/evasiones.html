@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evasiones</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .gallery-img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            padding: 5px;
+        }
+        .gallery-container {
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="index.html">SeguRED</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Reportes <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contactos</a>
+                    </li>
+                </ul>
+                <button class="btn btn-outline-danger my-2 my-sm-0 ml-auto" type="submit">Salir</button>
+            </div>
+        </nav>
+    </header>
+    
+    <main class="container gallery-container">
+        <h1 class="mb-4">Galería de Evasores</h1>
+        <div class="row" id="gallery">
+            <!-- Las imágenes se cargarán aquí -->
+        </div>
+    </main>
+
+    <footer class="footer bg-dark text-white py-3">
+        <div class="container text-center">
+            <span>© 2023 SeguRED. Todos los derechos reservados.</span>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const gallery = document.getElementById('gallery');
+            
+            // Crear array con los nombres de las imágenes que esperas
+            const maxImages = 20; // Puedes ajustar este número según necesites
+            const imageNames = [];
+            
+            for(let i = 0; i < maxImages; i++) {
+                imageNames.push(`evasores_${i}.png`);
+            }
+
+            // Crear elementos de la galería
+            imageNames.forEach(imageName => {
+                const col = document.createElement('div');
+                col.className = 'col-lg-4 col-md-6 mb-4';
+                
+                const img = document.createElement('img');
+                img.className = 'gallery-img';
+                img.src = `../base_de_datos/evasores/${imageName}`;
+                
+                // Manejar el error si la imagen no existe
+                img.onerror = function() {
+                    this.style.display = 'none';
+                    col.style.display = 'none';
+                };
+                
+                img.alt = `Evasor ${imageName.split('_')[1].split('.')[0]}`;
+                
+                col.appendChild(img);
+                gallery.appendChild(col);
+            });
+
+            // Función para actualizar la galería cada 30 segundos
+            function updateGallery() {
+                const images = document.querySelectorAll('.gallery-img');
+                images.forEach(img => {
+                    const currentSrc = img.src;
+                    img.src = currentSrc + '?t=' + new Date().getTime();
+                });
+            }
+
+            // Actualizar la galería cada 30 segundos
+            setInterval(updateGallery, 30000);
+        });
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

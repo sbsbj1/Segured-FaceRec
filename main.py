@@ -290,7 +290,7 @@ def check_fare_evaders(cap):
             return 'exit'
 
 if __name__ == "__main__":
-    cap = cv2.VideoCapture(0)  # Usamos solo una cámara
+    cap = cv2.VideoCapture(1)  # Usamos solo una cámara
     mode = 'payment'
 
     while True:
