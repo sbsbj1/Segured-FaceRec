@@ -81,105 +81,105 @@
         "nombre_parada": "PB2012-Parada 3 / Plaza Renca",
         "lat_parada": -33.40516243,
         "lon_parada": -70.703977,
-        "evasiones": 0
+        "evasiones": 1
     },
     {
         "id_parada": "PB2015",
         "nombre_parada": "PB2015-Senador Jaime Guzm\u00c3\u00a1n / Esq. Caupolic\u00c3\u00a1n",
         "lat_parada": -33.40201277,
         "lon_parada": -70.70136812,
-        "evasiones": 0
+        "evasiones": 1
     },
     {
         "id_parada": "PB2018",
         "nombre_parada": "PB2018-Senador Jaime Guzm\u00c3\u00a1n / Esq. Av. Ap\u00c3\u00b3stol Santiago",
         "lat_parada": -33.39998047,
         "lon_parada": -70.69662117,
-        "evasiones": 0
+        "evasiones": 1
     },
     {
         "id_parada": "PB2022",
         "nombre_parada": "PB2022-Senador Jaime Guzm\u00c3\u00a1n / Esq. Col\u00c3\u00b3n",
         "lat_parada": -33.40033351,
         "lon_parada": -70.69347588,
-        "evasiones": 0
+        "evasiones": 1
     },
     {
         "id_parada": "PB2024",
         "nombre_parada": "PB2024-Senador Jaime Guzm\u00c3\u00a1n / Esq. Camino Lo Ruiz",
         "lat_parada": -33.40274609,
         "lon_parada": -70.68570363,
-        "evasiones": 0
+        "evasiones": 1
     },
     {
         "id_parada": "PB3",
         "nombre_parada": "PB3-Reina De Chile / Esq. Avenida El Salto",
         "lat_parada": -33.40121867,
         "lon_parada": -70.62973466,
-        "evasiones": 0
+        "evasiones": 1
     },
     {
         "id_parada": "PB4",
         "nombre_parada": "PB4-Pedro Donoso / Esq. Santa Ana",
         "lat_parada": -33.3992259,
         "lon_parada": -70.63297857,
-        "evasiones": 0
+        "evasiones": 1
     },
     {
         "id_parada": "PB5",
         "nombre_parada": "PB5-Pedro Donoso / Esq. Mar\u00c3\u00ada Del Pilar",
         "lat_parada": -33.39833374,
         "lon_parada": -70.63681129,
-        "evasiones": 0
+        "evasiones": 1
     },
     {
         "id_parada": "PB6",
         "nombre_parada": "PB6-Pedro Donoso / Esq. Las Orqu\u00c3\u00addeas",
         "lat_parada": -33.39745681,
         "lon_parada": -70.64041103,
-        "evasiones": 0
+        "evasiones": 1
     },
     {
         "id_parada": "PB7",
         "nombre_parada": "PB7-Parada 4 / (M) Dorsal",
         "lat_parada": -33.39676345,
         "lon_parada": -70.643284,
-        "evasiones": 0
+        "evasiones": 1
     },
     {
         "id_parada": "PB8",
         "nombre_parada": "PB8-Avenida Dorsal / Esq. Atl\u00c3\u00a1ntida",
         "lat_parada": -33.39608682,
         "lon_parada": -70.64619311,
-        "evasiones": 0
+        "evasiones": 1
     },
     {
         "id_parada": "PI1",
         "nombre_parada": "PI1-Avenida Las Rejas / Esq. Agust\u00c3\u00adn L\u00c3\u00b3pez",
         "lat_parada": -33.4606994,
         "lon_parada": -70.705341,
-        "evasiones": 0
+        "evasiones": 1
     },
     {
         "id_parada": "PI10",
         "nombre_parada": "PI10-Av. Lo Err\u00c3\u00a1zuriz / Esq. Bernard Shaw",
         "lat_parada": -33.47621009,
         "lon_parada": -70.722891,
-        "evasiones": 0
+        "evasiones": 1
     },
     {
         "id_parada": "PI11",
         "nombre_parada": "PI11-Av. Lo Err\u00c3\u00a1zuriz / Esq. Estrella Polar",
         "lat_parada": -33.47895708,
         "lon_parada": -70.7234,
-        "evasiones": 0
+        "evasiones": 1
     },
     {
         "id_parada": "PI12",
         "nombre_parada": "PI12-Av. Lo Err\u00c3\u00a1zuriz / Esq. Isabel Riquelme",
         "lat_parada": -33.48153805,
         "lon_parada": -70.724594,
-        "evasiones": 0
+        "evasiones": 1
     },
     {
         "id_parada": "PI1242",

@@ -179,7 +179,7 @@ def capture_paying_faces(cap):
                     continue
 
                 # Redimensionar el rostro al tamaño estándar
-                face_resized = cv2.resize(face, (150, 150))
+                face_resized = cv2.resize(face, (300, 300))
 
                 # Comprobar si el rostro ya fue registrado usando ORB
                 if any(compare_faces(orb, face_resized, known_face) for known_face in known_faces_images):
@@ -290,7 +290,7 @@ def check_fare_evaders(cap):
             return 'exit'
 
 if __name__ == "__main__":
-    cap = cv2.VideoCapture(1)  # Usamos solo una cámara
+    cap = cv2.VideoCapture(2)  # Usamos solo una cámara
     mode = 'payment'
 
     while True:
