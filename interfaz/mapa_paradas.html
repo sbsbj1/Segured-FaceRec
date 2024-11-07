@@ -49,8 +49,16 @@
         <h2 class="mb-4">Ruta 101 - Evasiones Totales</h2>
 
         <div class="right-buttons">
-            <button id="btnFilter" class="btn btn-outline-info d-flex align-items-center mx-2">
+            <button id="btnFilter" class="btn btn-muted d-flex align-items-center mx-2">
                 <i class="bi bi-filter-square-fill"></i>
+            </button>
+        </div>
+        <div class="right-buttons" id="filterButtons" style="display: none;" >
+            <button id="btnOcultar" class="btn btn-muted align-items-center mx-2">
+                <i class="bi bi-eye-slash-fill"></i>
+            </button>
+            <button id="btnExclamacion" class="btn btn-muted align-items-center mx-2">
+                <i class="bi bi-exclamation-circle-fill"></i> <!-- Icono para mostrar paraderos con más evasiones -->
             </button>
         </div>
         <div id="map"></div> <!-- Mapa de Leaflet -->
@@ -69,7 +77,7 @@
             </button>
         </div>
 
-        <div id="cardDeck" class="card-deck mb-3 text-center mt-4" style="display: none;">
+        <div id="cardDeck" class="card-deck mb-3 text-center mt-4">
             <div class="card mb-4 box-shadow">
                 <div class="card-header">
                     <h4 class="my-0 font-weight-normal">Evasión total</h4>
@@ -90,11 +98,6 @@
         </div>
 
     </main>
-
-
-
-
-
 
 
     <!-- Footer -->

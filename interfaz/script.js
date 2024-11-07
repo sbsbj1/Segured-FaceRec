@@ -8,9 +8,9 @@ document.addEventListener('DOMContentLoaded', function () {
     }).addTo(map);
 
     let marcadores = {};
-    let paradasData = []; // Almacenar los datos de paradas globalmente
+    let paradasData = []; // Para almacenar las paradas
 
-    // Función para cargar los datos de paradas
+    // Funcion para cargar los datos de paradas
     function cargarParadas() {
         return fetch('paradas.json')
             .then(response => {
@@ -108,12 +108,74 @@ document.addEventListener('DOMContentLoaded', function () {
         document.getElementById('datetime').textContent = fecha;
     }
 
+    function mostrarBotonesFiltro() {
+        const filterButtons = document.getElementById('filterButtons');
+        if (filterButtons.style.display === 'none')
+        { 
+            filterButtons.style.display = 'block';
+        }
+        else
+        {
+            filterButtons.style.display = 'none';
+        }
+    }
+
+    let altEvasiones = false;
+
+    function ocultarEvasiones() {
+        altEvasiones = !altEvasiones;
+
+        paradasData.forEach(parada => {
+            
+            if (altEvasiones && parada.evasiones === 0) {
+                marcadores[parada.id_parada].remove();
+            }
+            else {
+                marcadores[parada.id_parada].addTo(map);
+            }
+
+        })
+    }
+
+    function mostrarMaxEvasiones() {
+        altEvasiones = !altEvasiones;
+        let maxEvasiones = 0;
+        let paraderoCritico = '';
+
+        paradasData.forEach(parada => {
+            if (parada.evasiones > maxEvasiones) {
+                maxEvasiones = parada.evasiones;
+                paraderoCritico = parada.id_parada;
+            }
+        });
+
+
+        
+        paradasData.forEach(parada => {
+            const marcador = marcadores[parada.id_parada];
+            if (altEvasiones){
+                if(parada.id_parada === paraderoCritico) {
+                    marcador.addTo(map);
+                    marcador.openPopup();
+                } else {
+                    marcador.remove();
+                }
+            } else {
+                marcador.addTo(map);
+            }
+    });
+}
+    
+
     // Inicializar la aplicación
     cargarParadas().then(() => {
         // Configurar event listeners
         document.getElementById('btnEstadisticas').addEventListener('click', actualizarEstadisticas);
         document.getElementById('btnGenerarReporte').addEventListener('click', generarReporte);
         document.getElementById('btnBuscarParadas').addEventListener('click', buscarParada);
+        document.getElementById('btnFilter').addEventListener('click', mostrarBotonesFiltro);
+        document.getElementById('btnOcultar').addEventListener('click', ocultarEvasiones);
+        document.getElementById('btnExclamacion').addEventListener('click', mostrarMaxEvasiones);
         
         // Iniciar actualización de fecha
         actualizarFecha();
