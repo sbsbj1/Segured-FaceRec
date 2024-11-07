@@ -1,6 +1,12 @@
 #datetime {
-    color: darkgray;
+    color: black;
+    justify-content: flex-end;
 }
+
+#body-mapa {
+    background-color: #e9ecef;
+}
+
 
 .center-buttons {
     display: flex;
@@ -24,11 +30,10 @@
 
 
 #map {
-    margin-top: 3px;
-    height: 500px; /* Ajusta la altura del mapa según tus necesidades */
+
+    height: 60vh; /* Ajusta la altura del mapa según tus necesidades */
     width: 100%;
-    border: 2px solid #343a40; /* Borde negro */
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    
 }
 
 button i {
@@ -53,6 +58,36 @@ button i {
 .gallery-container {
     padding: 20px;
 }
+
+.btn {
+    position: relative; /* Esto es clave para que el pseudo-elemento se posicione dentro del botón */
+    border: none; /* Elimina bordes predeterminados */
+    padding-bottom: 5px; /* Deja espacio para la barra */
+}
+
+/* Creamos el pseudo-elemento */
+.btn:after {
+    content: ''; /* Creamos un pseudo-elemento */
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%; /* La barra no es visible al principio */
+    height: 2px; /* El grosor de la barra */
+    background-color: #007bff; /* El color de la barra */
+    transition: width 0.3s ease; /* Animación para el subrayado */
+}
+
+/* Cuando el botón está enfocado o activado (clickeado) */
+.btn:focus:after, .btn:active:after {
+    width: 100%; /* Se expande la barra hasta ocupar todo el ancho del botón */
+}
+
+/* Opcionalmente, puedes hacer que los botones no tengan borde al hacer foco */
+.btn:focus {
+    outline: none; /* Elimina el borde por defecto de enfoque */
+}
+
+
 
 
 

@@ -16,7 +16,7 @@
 
 </head>
 
-<body>
+<body id="body-mapa">
 
     <header>
         <nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark">
@@ -43,61 +43,70 @@
         </nav>
     </header>
 
-    <main role="main" class="container text-center my-5">
-        <span id="datetime"></span>
-        <hr>
-        <h2 class="mb-4">Ruta 101 - Evasiones Totales</h2>
-
-        <div class="right-buttons">
-            <button id="btnFilter" class="btn btn-muted d-flex align-items-center mx-2">
-                <i class="bi bi-filter-square-fill"></i>
-            </button>
-        </div>
-        <div class="right-buttons" id="filterButtons" style="display: none;" >
-            <button id="btnOcultar" class="btn btn-muted align-items-center mx-2">
-                <i class="bi bi-eye-slash-fill"></i>
-            </button>
-            <button id="btnExclamacion" class="btn btn-muted align-items-center mx-2">
-                <i class="bi bi-exclamation-circle-fill"></i> <!-- Icono para mostrar paraderos con más evasiones -->
-            </button>
-        </div>
-        <div id="map"></div> <!-- Mapa de Leaflet -->
-
-        <div class="center-buttons mt-2">
-            <button id="btnEstadisticas" class="btn btn-outline-info d-flex align-items-center mx-2">
-                <i class="bi bi-bar-chart-fill mr-2"></i> Ver Estadísticas
-            </button>
-            <button id="btnGenerarReporte" class="btn btn-outline-info d-flex align-items-center mx-2">
-                <i class="bi bi-file-earmark-text-fill mr-2"></i> Generar Reporte
-            </button>
-            <input type="text" id="inputParadaID" placeholder="ID de la parada" class="form-control d-inline-block mx-2"
-                style="width: auto;">
-            <button id="btnBuscarParadas" class="btn btn-outline-info d-flex align-items-center mx-2">
-                <i class="bi bi-search mr-2"></i> Buscar Parada
-            </button>
-        </div>
-
-        <div id="cardDeck" class="card-deck mb-3 text-center mt-4">
-            <div class="card mb-4 box-shadow">
-                <div class="card-header">
-                    <h4 class="my-0 font-weight-normal">Evasión total</h4>
+    <main class="container-fluid">
+        <div class="row" style="background-color: white;">
+            <div class="col-12 d-flex justify-content-between">
+                <div>
+                    <button class="btn text-secondary mt-2 mb-2" id="btnExclamacion">
+                        <i class="bi bi-exclamation-triangle-fill text-danger mr-2"></i> Paradero Crítico
+                    </button>
+                    <button class="btn text-secondary mt-2 mb-2" id="btnOcultar">
+                        <i class="bi bi-eye-slash-fill text-warning mr-2"></i> Paraderos con Evasiones
+                    </button>
+                    <button id="btnEstadisticas" class="btn text-secondary align-items-center mx-2">
+                        <i class="bi bi-bar-chart-fill text-success mr-2"></i> Ver Estadísticas
+                    </button>
+                    <button id="btnGenerarReporte" class="btn text-secondary align-items-center mx-2">
+                        <i class="bi bi-file-earmark-text-fill text-info mr-2"></i> Generar Reporte
+                    </button>
                 </div>
-                <div class="card-body">
-                    <p class="card-text" id="totalEvasiones">0 evasiones</p>
+                
+                
+                <div id="datetime" class="mt-2 mb-2"></div>
+            </div>
+        </div>
+
+        <div class="row mt-4 mb-4 ml-4 mr-4">
+            <div class="col col-md-3 rounded" style="background-color: white; box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);">
+                <div class="input-group mt-2">
+                    <input type="text" id="inputParadaID" placeholder="ID de la parada" class="form-control">
+                    <div class="input-group-append">
+                        <button id="btnBuscarParadas" class="btn btn-primary">
+                            <i class="bi bi-search "></i> 
+                        </button>
+                    </div>
+                </div>
+                <div id="cardDeck" class="text-center mt-4">
+                    <div class="card mb-4 box-shadow d-block">
+                        <div class="card-header">
+                            <h4 class="my-0 font-weight-normal">Evasión total</h4>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text" id="totalEvasiones"></p>
+                        </div>
+                    </div>
+                    <div class="card mb-4 box-shadow d-block">
+                        <div class="card-header">
+                            <h4 class="my-0 font-weight-normal">Paradero Crítico</h4>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text" id="paraderoCritico"></p>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="card mb-4 box-shadow">
-                <div class="card-header">
-                    <h4 class="my-0 font-weight-normal">Paradero Crítico</h4>
-                </div>
-                <div class="card-body">
-                    <p class="card-text" id="paraderoCritico">Sin datos</p>
-                </div>
+
+            <div class="col col-lg rounded">
+  
+                <div id="map" style="box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);"></div> <!-- Mapa de Leaflet -->
             </div>
 
-        </div>
 
+        
     </main>
+
+
+
 
 
     <!-- Footer -->

@@ -173,7 +173,6 @@ document.addEventListener('DOMContentLoaded', function () {
         document.getElementById('btnEstadisticas').addEventListener('click', actualizarEstadisticas);
         document.getElementById('btnGenerarReporte').addEventListener('click', generarReporte);
         document.getElementById('btnBuscarParadas').addEventListener('click', buscarParada);
-        document.getElementById('btnFilter').addEventListener('click', mostrarBotonesFiltro);
         document.getElementById('btnOcultar').addEventListener('click', ocultarEvasiones);
         document.getElementById('btnExclamacion').addEventListener('click', mostrarMaxEvasiones);
         
