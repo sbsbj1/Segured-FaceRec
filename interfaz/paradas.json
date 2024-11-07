@@ -186,35 +186,35 @@
         "nombre_parada": "PI1242-Avenida Las Torres / Esq. Acapulco",
         "lat_parada": -33.50604095,
         "lon_parada": -70.73565256,
-        "evasiones": 0
+        "evasiones": 1
     },
     {
         "id_parada": "PI1243",
         "nombre_parada": "PI1243-Avenida Las Torres / Esq. La Primavera",
         "lat_parada": -33.50822786,
         "lon_parada": -70.735167,
-        "evasiones": 0
+        "evasiones": 1
     },
     {
         "id_parada": "PI13",
         "nombre_parada": "PI13-Parada / Parque Lo Err\u00c3\u00a1zuriz",
         "lat_parada": -33.48565505,
         "lon_parada": -70.724762,
-        "evasiones": 0
+        "evasiones": 1
     },
     {
         "id_parada": "PI1321",
         "nombre_parada": "PI1321-Parada 3 / Colegio Don Orione",
         "lat_parada": -33.50358703,
         "lon_parada": -70.71160574,
-        "evasiones": 0
+        "evasiones": 1
     },
     {
         "id_parada": "PI1323",
         "nombre_parada": "PI1323-Parada 3 / El Mirador",
         "lat_parada": -33.50534762,
         "lon_parada": -70.71349021,
-        "evasiones": 0
+        "evasiones": 1
     },
     {
         "id_parada": "PI14",
