@@ -1,4 +1,6 @@
+// Esperar a que el DOM esté completamente cargado
 document.addEventListener('DOMContentLoaded', function () {
+    // Inicializar el mapa
     var map = L.map('map').setView([-33.4489, -70.6693], 13);
 
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
@@ -6,126 +8,115 @@ document.addEventListener('DOMContentLoaded', function () {
     }).addTo(map);
 
     let marcadores = {};
+    let paradasData = []; // Almacenar los datos de paradas globalmente
 
-    // Cargar los datos de paradas
-    fetch('paradas.json')
-        .then(response => response.json())
-        .then(data => {
-            data.forEach(parada => {
-                // Crear un marcador para cada parada
-                const marker = L.marker([parada.lat_parada, parada.lon_parada]).addTo(map);
-                // Agregar un popup con información
-                marker.bindPopup(`<strong>${parada.nombre_parada}</strong><br>
-    Evasiones: ${parada.evasiones}<br><br>
-    <strong><a href="evasiones.html" onclick="window.location.href='evasiones.html'; return false;">Ver Evasiones</a></strong>`);
-                // Agregar el marcador al objeto de marcadores
-                marcadores[parada.id_parada] = marker;
-            });
-        })
-        .catch(error => console.error('Error al cargar las paradas:', error));
-        
-    const gallery = document.getElementById('gallery');
-
-    const rutaImagenes = 'base_de_datos/evasores/';
-    const imagenes = ['evasores_0.png', 'evasores_1.png', 'evasores_2.png', 'evasores_3.png', 'evasores_4.png'];
-    imagenes.forEach(nombreImagen => {
-        const col = document.createElement('div');
-        col.classList.add('col-lg-4', 'col-md-6', 'mb-4'); //se añaden las clases de bootstrap
-        
-        const img = document.createElement('img');
-        img.src = `${rutaImagenes}${nombreImagen}`;
-        img.alt = nombreImagen;
-        img.classList.add('img-fluid');
-
-        col.appendChild(img);
-        gallery.appendChild(col);
-    })
-
-
-    // Mostrar el card deck de bootstrap
-    const btnEstadisticas = document.getElementById('btnEstadisticas');
-
-    btnEstadisticas.addEventListener('click', function () {
-        console.log('Botón de estadísticas clicado');
-        fetch('paradas.json')
+    // Función para cargar los datos de paradas
+    function cargarParadas() {
+        return fetch('paradas.json')
             .then(response => {
-                console.log('Respuesta recibida');
+                if (!response.ok) {
+                    throw new Error('Network response was not ok');
+                }
                 return response.json();
             })
             .then(data => {
-                console.log('Datos JSON:', data);
-                let totalEvasiones = 0;
-                let paraderoEvasiones = {};
-
+                paradasData = data; // Guardar los datos globalmente
                 data.forEach(parada => {
-                    totalEvasiones += parada.evasiones;
-                    if (paraderoEvasiones[parada.id_parada]) {
-                        paraderoEvasiones[parada.id_parada] += parada.evasiones;
-                    } else {
-                        paraderoEvasiones[parada.id_parada] = parada.evasiones;
-                    }
+                    const marker = L.marker([parada.lat_parada, parada.lon_parada]).addTo(map);
+                    marker.bindPopup(`
+                        <strong>${parada.nombre_parada}</strong><br>
+                        Evasiones: ${parada.evasiones}<br><br>
+                        <a href="evasiones.html" class="btn btn-primary btn-sm">Ver Evasiones</a>
+                    `);
+                    marcadores[parada.id_parada] = marker;
                 });
-
-                let paraderoCritico = Object.keys(paraderoEvasiones).reduce((a, b) => paraderoEvasiones[a] > paraderoEvasiones[b] ? a : b);
-
-                document.getElementById('totalEvasiones').textContent = `${totalEvasiones} evasiones`;
-                document.getElementById('paraderoCritico').textContent = paraderoCritico;
-
-                const cardDeck = document.getElementById('cardDeck');
-                cardDeck.style.display = 'flex';
+                return data;
             })
-            .catch(error => console.error('Error al cargar el JSON:', error));
-    });
+            .catch(error => {
+                console.error('Error al cargar las paradas:', error);
+                alert('Error al cargar los datos de paradas');
+            });
+    }
 
-    const btnGenerarReporte = document.getElementById('btnGenerarReporte');
+    // Función para actualizar estadísticas
+    function actualizarEstadisticas() {
+        if (paradasData.length === 0) {
+            alert('No hay datos de paradas disponibles');
+            return;
+        }
 
-    btnGenerarReporte.addEventListener('click', function () {
-        fetch('paradas.json')
-        .then(response => response.json())
-        .then(data => {
-            const fecha = new Date().toISOString();   //Se crea la fecha y se pasa al formato ISO de fechas
-            const nombreArchivo = 'reporte-ruta101-' + fecha + '.json';   //se junta en el nombreArchivo
-            const jsonStr = JSON.stringify(data, null, 4);         
-            const blob = new Blob([jsonStr], {type: 'application/json'});
+        let totalEvasiones = 0;
+        let maxEvasiones = 0;
+        let paraderoCritico = '';
 
+        paradasData.forEach(parada => {
+            totalEvasiones += parada.evasiones;
+            if (parada.evasiones > maxEvasiones) {
+                maxEvasiones = parada.evasiones;
+                paraderoCritico = parada.id_parada;
+            }
+        });
 
-            //Para que se descargue:
-            const a = document.createElement('a');
-            a.href = URL.createObjectURL(blob);
-            a.download = nombreArchivo;
-            a.click();
-            document.body.removeChild(a);
-            URL.revokeObjectURL(a.href);
-        })
-    });
+        document.getElementById('totalEvasiones').textContent = `${totalEvasiones} evasiones`;
+        document.getElementById('paraderoCritico').textContent = `Parada ${paraderoCritico} (${maxEvasiones} evasiones)`;
+        
+        const cardDeck = document.getElementById('cardDeck');
+        cardDeck.style.display = 'flex';
+    }
 
-    const btnBuscarParadas = document.getElementById('btnBuscarParadas');
-    const inputParadaID = document.getElementById('inputParadaID');
-    btnBuscarParadas.addEventListener('click', function () {
-        const paradaID = inputParadaID.value.trim();
+    // Función para generar reporte
+    function generarReporte() {
+        if (paradasData.length === 0) {
+            alert('No hay datos para generar el reporte');
+            return;
+        }
+
+        const fecha = new Date().toISOString().split('T')[0];
+        const nombreArchivo = `reporte-ruta101-${fecha}.json`;
+        const jsonStr = JSON.stringify(paradasData, null, 2);
+        const blob = new Blob([jsonStr], { type: 'application/json' });
+
+        const a = document.createElement('a');
+        a.href = URL.createObjectURL(blob);
+        a.download = nombreArchivo;
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+        URL.revokeObjectURL(a.href);
+    }
+
+    // Función para buscar parada
+    function buscarParada() {
+        const paradaID = document.getElementById('inputParadaID').value.trim();
         if (!paradaID) {
-            alert('Debe ingresar un ID de parada');
+            alert('Por favor ingrese un ID de parada');
             return;
         }
 
         const marcador = marcadores[paradaID];
         if (marcador) {
+            map.setView(marcador.getLatLng(), 15);
             marcador.openPopup();
-            map.setView(marcador.getLatLng(), 15); //se centra el mapa en el marcador
         } else {
             alert('No se encontró una parada con ese ID');
         }
-        
-        });
-    
-    function updatefecha(){
-        const date = new Date(); //creamos el objeto
-
-        const fechaActual = date.toLocaleDateString(); //obtenemos la fecha actual como string
-
-        document.querySelector('#datetime').textContent = fechaActual; //actualizamos el span del HTML
-
     }
-    setInterval(updatefecha, 1000);  //aqui llamamos la funcion del tiempo cada segundo
-});
 
+    // Función para actualizar fecha
+    function actualizarFecha() {
+        const fecha = new Date().toLocaleDateString();
+        document.getElementById('datetime').textContent = fecha;
+    }
+
+    // Inicializar la aplicación
+    cargarParadas().then(() => {
+        // Configurar event listeners
+        document.getElementById('btnEstadisticas').addEventListener('click', actualizarEstadisticas);
+        document.getElementById('btnGenerarReporte').addEventListener('click', generarReporte);
+        document.getElementById('btnBuscarParadas').addEventListener('click', buscarParada);
+        
+        // Iniciar actualización de fecha
+        actualizarFecha();
+        setInterval(actualizarFecha, 1000);
+    });
+});
